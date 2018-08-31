@@ -4,6 +4,7 @@ INSERT INTO games (id, name, type, stock, price) VALUES (3, 'Evil Within', 'PS4'
 INSERT INTO games (id, name, type, stock, price) VALUES (4, 'Forza Horizon 4', 'PS4', 20, 59.99)
 INSERT INTO games (id, name, type, stock, price) VALUES (5, 'Prototype 2', 'Xbox', 17, 24.99)
 INSERT INTO games (id, name, type, stock, price) VALUES (6, 'Torchlight 2', 'PC', 30, 9.99)
+INSERT INTO games (id, name, type, stock, price) VALUES (7, 'World of Warcraft', 'PC', 40, 14.99)
 
 INSERT INTO clients (id, first_name, last_name, birth_day) VALUES (1, 'Adam', 'Adamo', '1988-04-24')
 INSERT INTO clients (id, first_name, last_name, birth_day) VALUES (2, 'Bart', 'Boom', '1992-03-15')
@@ -12,3 +13,9 @@ INSERT INTO clients (id, first_name, last_name, birth_day) VALUES (4, 'Karel', '
 INSERT INTO clients (id, first_name, last_name, birth_day) VALUES (5, 'Ludo', 'Leip', '1996-08-11')
 INSERT INTO clients (id, first_name, last_name, birth_day) VALUES (6, 'Maarten', 'Mormel', '1990-03-09')
 INSERT INTO clients (id, first_name, last_name, birth_day) VALUES (7, 'Wesley', 'Jaemers', '1989-06-01')
+
+INSERT INTO shops (id, name, location, email, phone) VALUES (1, 'Gamemania Hasselt', 'Hasselt', 'gm-hasselt@gamemania.be', 011256174)
+INSERT INTO shops (id, name, location, email, phone) VALUES (2, 'Gamemania Houthalen', 'Houthalen-Helchteren', 'gm-houthalen@gamemania.be', 011375484)
+INSERT INTO shops (id, name, location, email, phone) VALUES (3, 'Mediamarkt Hasselt', 'Hasselt', 'mm-hasselt@mediamarkt.be', 012357498)
+INSERT INTO shops (id, name, location, email, phone) VALUES (4, 'Bart smidt Hasselt', 'Hasselt', 'bs-hasselt@bartsmidt.be', 014226492)
+INSERT INTO shops (id, name, location, email, phone) VALUES (5, 'Gamemania Beringen', 'Beringen', 'gm-beringen@gamemania.be', 013521496)

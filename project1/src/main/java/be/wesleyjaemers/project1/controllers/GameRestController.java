@@ -3,13 +3,13 @@ package be.wesleyjaemers.project1.controllers;
 import be.wesleyjaemers.project1.entities.Games;
 import be.wesleyjaemers.project1.services.GameService;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
+
+import java.util.List;
 
 @RestController
-@RequestMapping("/game")
+@RequestMapping("/games")
+@CrossOrigin (origins ="http://localhost:63342")
 public class GameRestController {
     private final GameService gameService;
 
@@ -25,5 +25,8 @@ public class GameRestController {
         return gameService.findById(id);
     }
 
-
+@GetMapping("/all")
+    public List<Games> getAll() {
+        return gameService.getGamesAll();
+}
 }

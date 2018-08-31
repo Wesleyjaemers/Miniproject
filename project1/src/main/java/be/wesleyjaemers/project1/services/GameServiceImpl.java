@@ -6,6 +6,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import javax.persistence.EntityNotFoundException;
+import java.util.List;
 
 @Service
 public class GameServiceImpl implements GameService {
@@ -29,6 +30,11 @@ public class GameServiceImpl implements GameService {
     public Games findByType (String type){
 
         return gameRepository.findByType(type);
+    }
+
+    @Override
+    public List<Games> getGamesAll() {
+        return (List <Games>) gameRepository.findAll();
     }
 
 
